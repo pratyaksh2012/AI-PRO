@@ -1139,7 +1139,7 @@
   renderChatList();
   renderConversation();
 
-  if (!GEMINI_API_KEY || GEMINI_API_KEY === 'PASTE_YOUR_GEMINI_API_KEY_HERE'){
+  if (!GEMINI_API_KEY || GEMINI_API_KEY === 'AQ.Ab8RN6Lgd_opiTCHOd_K3Wp9Fu18YFoNvVKodYP9zEjOeoW8aw'){
     setStatus('down'); statusText.textContent = 'no key set — edit index.html';
   } else {
     callGemini(CHAT_MODEL, [{ role: 'user', parts: [{ text: 'hi' }] }], null, 1)
@@ -1147,21 +1147,6 @@
       .catch(() => setStatus('down'));
   }
 })();
-  let deferredPrompt;
-const installBtn = document.getElementById('installBtn');
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent browser's automatic mini-infobar
-  e.preventDefault();
-  // Save the event so it can be triggered later
-  deferredPrompt = e;
-  // Show the install button
-  if (installBtn) {
-    installBtn.style.display = 'flex';
-  }
-});
-
-
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js')
