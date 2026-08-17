@@ -1,0 +1,21 @@
+{
+  "short_name": "Marginal",
+  "name": "Marginal — an AI that thinks in the margins",
+  "icons": [
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "background_color": "#f2ede2",
+  "theme_color": "#232019",
+  "display": "standalone",
+  "scope": "/"
+}
