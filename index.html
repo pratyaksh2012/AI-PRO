@@ -1139,7 +1139,7 @@
   renderChatList();
   renderConversation();
 
-  if (!GEMINI_API_KEY || GEMINI_API_KEY === 'AQ.Ab8RN6Lgd_opiTCHOd_K3Wp9Fu18YFoNvVKodYP9zEjOeoW8aw'){
+  if (!GEMINI_API_KEY || GEMINI_API_KEY === 'PASTE_YOUR_GEMINI_API_KEY_HERE'){
     setStatus('down'); statusText.textContent = 'no key set — edit index.html';
   } else {
     callGemini(CHAT_MODEL, [{ role: 'user', parts: [{ text: 'hi' }] }], null, 1)
